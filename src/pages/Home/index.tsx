@@ -14,11 +14,13 @@ export const Home = () => {
                         variant='primary' 
                         textColor='secondary' 
                         text='Pessoa Usuária'
+                        link='/users'
                     />
                     <Button 
                         variant='secondary'
                         textColor='primary' 
                         text='Profissional'
+                        link='/professional'
                     />
                 </div>
             </SectionContent>
