@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <HeaderContainer>
             <HeaderContent>
-                <h2>Logo</h2>
+                <h2>Lacrei</h2>
                 <nav>
                     <NavLink to='/' title='Home'>
                         <h3>Home</h3>
