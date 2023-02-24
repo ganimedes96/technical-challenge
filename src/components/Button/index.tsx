@@ -22,7 +22,8 @@ export const Button = ({
                 textColor={textColor}
             >
                 {text}
-            </ButtonContainer>)
+            </ButtonContainer>
 
         </NavLink>
+    )
 }
