@@ -16,7 +16,7 @@ export const HeaderContent = styled.div`
     @media (max-width: 600px) {
         flex-direction: column;
     }
-    h2{
+    h2{ 
         color: ${(props) => props.theme['green-500']};
         font-weight: 700;
         font-size: 2rem;

@@ -6,17 +6,21 @@ export const Home = () => {
     return (
         <MainContainer>
             <SectionContent>
-                <h1>Boas vindas a Lacrei  Saúde</h1>
-                <p>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
+                <h1 data-testid='title'>Boas vindas a Lacrei  Saúde</h1>
+                <p data-testid='about-home'>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
                 
                 <div>
+                    
                     <Button 
+                        testId="users"
                         variant='primary' 
                         textColor='secondary' 
                         text='Pessoa Usuária'
                         link='/users'
+                        
                     />
                     <Button 
+                        testId='professional'
                         variant='secondary'
                         textColor='primary' 
                         text='Profissional'
@@ -25,7 +29,7 @@ export const Home = () => {
                 </div>
             </SectionContent>
             <SectionContent>
-                <img src={ImgHome} alt="Imagem de uma doutora" />
+                <img data-testid='img-home' src={ImgHome} alt="Imagem de uma doutora" />
             </SectionContent>
         </MainContainer>
     )
