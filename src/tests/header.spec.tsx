@@ -21,16 +21,16 @@ describe('Testing page Home', () => {
     it('Should be able to render components header ', async () => {
           
         expect(screen.getByTestId("logo")).toBeInTheDocument()
-        expect(screen.getByTestId("home-nav")).toBeInTheDocument()
-        expect(screen.getByTestId("users-nav")).toBeInTheDocument()
-        expect(screen.getByTestId("professional-nav")).toBeInTheDocument()
+        expect(screen.getByTestId("home-header")).toBeInTheDocument()
+        expect(screen.getByTestId("users-header")).toBeInTheDocument()
+        expect(screen.getByTestId("professional-header")).toBeInTheDocument()
             
     })
     it('Should be able to fire event in navigate links', () => {
       
-        const pageHome = screen.getByTestId("home-nav");
-        const pageUsers = screen.getByTestId("users-nav")
-        const pageProfessional = screen.getByTestId("professional-nav")
+        const pageHome = screen.getByTestId("home-header");
+        const pageUsers = screen.getByTestId("users-header")
+        const pageProfessional = screen.getByTestId("professional-header")
         fireEvent.click(pageHome)
         fireEvent.click(pageUsers);
         fireEvent.click(pageProfessional)

@@ -1,11 +1,35 @@
-import { Link } from "./NavLink"
+import { NavLink } from "react-router-dom"
 
-export const Navigate = () => {
+
+interface TestIdProps {
+    testIdHome: string
+    testIdUses: string
+    testIdProfessional: string
+}
+
+export const Navigate = (
+    {testIdHome, testIdProfessional, testIdUses}:TestIdProps
+    ) => {
     return (
         <nav >
-            <Link text="Home" path="/"/>
-            <Link text="Pessoa Usuária" path="/users" />
-            <Link text="Profissional" path="/professional" />
+            <NavLink 
+                data-testid={testIdHome}
+                to="/"     
+             >
+                <h3>Home</h3>
+            </NavLink>
+            <NavLink 
+                data-testid={testIdUses} 
+                to="/users"     
+             >
+                <h3>Pessoa Usuária</h3>
+            </NavLink>
+            <NavLink 
+                data-testid={testIdProfessional} 
+                to="/professional"     
+             >
+                <h3>Profissional</h3>
+            </NavLink>
         </nav>
           
     )

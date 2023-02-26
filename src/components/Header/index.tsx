@@ -9,7 +9,11 @@ export const Header = () => {
                 <NavLink to="/">
                     <h2 data-testid="logo">Lacrei</h2>
                 </NavLink>
-               <Navigate/>
+               <Navigate 
+                    testIdHome="home-header"
+                    testIdUses="users-header"
+                    testIdProfessional="professional-header"
+                />
             </HeaderContent>
         </HeaderContainer>
     )

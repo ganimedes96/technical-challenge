@@ -9,7 +9,11 @@ export const Footer = () => {
     return (
         <FooterContainer>
             <HeaderContent>  
-              <Navigate />
+              <Navigate 
+                testIdHome="home-footer"
+                testIdUses="users-footer"
+                testIdProfessional="professional-footer"
+              />
             </HeaderContent>
             <div>
                 <img data-testid="img-face" src={facebook} alt="Facebook" />
