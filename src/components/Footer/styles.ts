@@ -46,8 +46,6 @@ export const HeaderContent = styled.header`
         a{
             font-weight: 400;
             font-size: 16px;
-            text-decoration: none;
-            color: ${(props) => props.theme['gray-800']};
             transition: color 0.4s;
             h3{
                 font-weight: 400;
